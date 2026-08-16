@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Thank You | PrimeNest Realty</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <main class="thank-you-page">
+
+        <div class="thank-you-card">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+
+            <p class="section-label">
+                REQUEST RECEIVED
+            </p>
+
+
+            <h1 id="thankYouTitle">
+                Thanks! We Got Your Request.
+            </h1>
+
+
+            <p id="thankYouMessage">
+                We've received your property preferences.
+                A PrimeNest Realty representative will review
+                your information and help you find options
+                that match your needs.
+            </p>
+
+
+            <a
+                href="index.html"
+                class="primary-button"
+            >
+                BACK TO HOME
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        const latestLead =
+            JSON.parse(
+                localStorage.getItem("latestPrimeNestLead")
+            );
+
+
+        if (latestLead) {
+
+            const firstName =
+                latestLead.name.split(" ")[0];
+
+
+            document.getElementById(
+                "thankYouTitle"
+            ).textContent =
+                `Thanks, ${firstName}! We Got Your Request.`;
+
+
+            document.getElementById(
+                "thankYouMessage"
+            ).textContent =
+                "We've received your property preferences. A PrimeNest Realty representative will review your information and help you find options that match your needs.";
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

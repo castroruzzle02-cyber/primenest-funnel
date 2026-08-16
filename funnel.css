@@ -1,0 +1,1574 @@
+/* =========================================================
+   PRIMENEST REALTY
+   MODERN REAL ESTATE FUNNEL
+   BLACK / WHITE / ELECTRIC BLUE
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background: #f4f5f7;
+    color: #08090b;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root {
+
+    --black: #08090b;
+    --black-soft: #17191d;
+
+    --blue: #1769ff;
+    --blue-dark: #0d56dc;
+    --blue-light: #eaf1ff;
+
+    --white: #ffffff;
+    --off-white: #f4f5f7;
+
+    --gray-100: #f0f1f3;
+    --gray-200: #dedfe3;
+    --gray-400: #8a8f98;
+    --gray-600: #555b65;
+
+    --success: #16845a;
+
+    --radius-sm: 10px;
+    --radius-md: 18px;
+    --radius-lg: 26px;
+
+    --shadow:
+        0 20px 60px rgba(8, 9, 11, 0.08);
+}
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+main {
+    width: 100%;
+}
+
+.eyebrow {
+    display: inline-block;
+
+    margin-bottom: 16px;
+
+    color: var(--blue);
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.funnel-nav {
+
+    width: 100%;
+    height: 82px;
+
+    padding: 0 4vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background:
+        rgba(244, 245, 247, 0.96);
+
+    border-bottom:
+        1px solid rgba(8, 9, 11, 0.05);
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    backdrop-filter: blur(14px);
+}
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.funnel-brand {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-mark {
+
+    width: 38px;
+    height: 38px;
+
+    display: grid;
+    place-items: center;
+
+    background: var(--blue);
+    color: var(--white);
+
+    border-radius: 9px;
+
+    font-size: 17px;
+}
+
+.brand-name {
+
+    display: flex;
+    flex-direction: column;
+
+    line-height: 1;
+}
+
+.brand-name strong {
+
+    font-size: 18px;
+    font-weight: 850;
+
+    letter-spacing: -0.5px;
+}
+
+.brand-name span {
+
+    margin-top: 5px;
+
+    color: var(--blue);
+
+    font-size: 8px;
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+
+/* =========================================================
+   NAV CTA
+========================================================= */
+
+.nav-cta {
+
+    padding: 11px 20px;
+
+    background: var(--blue);
+    color: var(--white);
+
+    border-radius: 7px;
+
+    font-size: 13px;
+    font-weight: 750;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+.nav-cta:hover {
+
+    background: var(--blue-dark);
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero-section {
+
+    width: 100%;
+    max-width: 1500px;
+
+    min-height: 650px;
+
+    margin: 0 auto;
+
+    padding:
+        65px 4vw 80px;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.95fr)
+        minmax(0, 1.05fr);
+
+    gap: 65px;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.hero-content {
+
+    max-width: 680px;
+}
+
+.hero-content h1 {
+
+    max-width: 700px;
+
+    font-size:
+        clamp(50px, 6vw, 82px);
+
+    line-height: 0.94;
+
+    letter-spacing: -4px;
+
+    font-weight: 900;
+
+    color: var(--black);
+}
+
+.hero-content h1 span {
+
+    display: block;
+
+    color: var(--blue);
+}
+
+.hero-description {
+
+    max-width: 570px;
+
+    margin-top: 28px;
+
+    color: var(--gray-600);
+
+    font-size: 16px;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   HERO BUTTON
+========================================================= */
+
+.hero-button {
+
+    margin-top: 30px;
+
+    padding:
+        16px 25px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: var(--blue);
+    color: var(--white);
+
+    font-size: 14px;
+    font-weight: 850;
+
+    text-transform: uppercase;
+
+    box-shadow:
+        0 12px 25px rgba(23, 105, 255, 0.20);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.hero-button span {
+
+    font-size: 20px;
+
+    line-height: 1;
+}
+
+.hero-button:hover {
+
+    background: var(--blue-dark);
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 18px 32px rgba(23, 105, 255, 0.28);
+}
+
+
+/* =========================================================
+   HERO TRUST
+========================================================= */
+
+.hero-trust {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+
+    margin-top: 25px;
+}
+
+.hero-trust div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: var(--gray-600);
+
+    font-size: 12px;
+}
+
+.hero-trust strong {
+
+    width: 18px;
+    height: 18px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: var(--black);
+    color: var(--white);
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   HERO VISUAL
+========================================================= */
+
+.hero-visual {
+
+    width: 100%;
+
+    min-height: 550px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* =========================================================
+   PROPERTY IMAGE
+========================================================= */
+
+.hero-image {
+
+    width: min(100%, 600px);
+
+    height: 530px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background-color: #d9dde3;
+
+    background-image:
+        linear-gradient(
+            135deg,
+            rgba(10, 20, 35, 0.08),
+            rgba(255, 255, 255, 0.03)
+        ),
+        url(
+            "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85"
+        );
+
+    background-size: cover;
+
+    background-position: center;
+
+    /*
+       Subtle geometric shape.
+       Much safer than the previous aggressive shape.
+    */
+
+    clip-path:
+        polygon(
+            7% 0%,
+            100% 0%,
+            100% 83%,
+            88% 100%,
+            10% 100%,
+            0% 20%
+        );
+
+    border:
+        3px solid var(--black);
+
+    box-shadow:
+        0 25px 60px rgba(8, 9, 11, 0.14);
+}
+
+
+/* =========================================================
+   BLUE INNER BORDER
+========================================================= */
+
+.hero-image::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 13px;
+    right: 13px;
+    bottom: 13px;
+    left: 13px;
+
+    border:
+        2px solid var(--blue);
+
+    border-radius: 18px;
+
+    z-index: 3;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   IMAGE DARK GRADIENT
+========================================================= */
+
+.hero-image::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.72) 0%,
+            rgba(0, 0, 0, 0.30) 25%,
+            rgba(0, 0, 0, 0.03) 58%,
+            transparent 75%
+        );
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   IMAGE OVERLAY
+========================================================= */
+
+.image-overlay {
+
+    display: none;
+}
+
+
+/* =========================================================
+   PROPERTY BADGE
+========================================================= */
+
+.property-badge {
+
+    position: absolute;
+
+    left: 42px;
+    right: 42px;
+    bottom: 38px;
+
+    z-index: 5;
+
+    padding:
+        18px 21px;
+
+    background:
+        rgba(8, 9, 11, 0.94);
+
+    border-radius: 11px;
+
+    color: var(--white);
+
+    /*
+       Keeps text safely away from geometric edges.
+    */
+}
+
+.property-badge span {
+
+    display: block;
+
+    color: #8fb6ff;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.8px;
+}
+
+.property-badge strong {
+
+    display: block;
+
+    margin-top: 5px;
+
+    color: var(--white);
+
+    font-size: 22px;
+
+    line-height: 1.15;
+}
+
+
+/* =========================================================
+   VALUE SECTION
+========================================================= */
+
+.value-section {
+
+    padding:
+        80px 4vw;
+
+    background: var(--white);
+
+    border-top:
+        1px solid var(--gray-200);
+
+    border-bottom:
+        1px solid var(--gray-200);
+}
+
+.section-heading {
+
+    max-width: 700px;
+
+    margin:
+        0 auto 45px;
+
+    text-align: center;
+}
+
+.section-heading h2 {
+
+    font-size:
+        clamp(35px, 4vw, 55px);
+
+    line-height: 1;
+
+    letter-spacing: -2.5px;
+
+    font-weight: 850;
+}
+
+.section-heading p {
+
+    margin-top: 16px;
+
+    color: var(--gray-600);
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   VALUE GRID
+========================================================= */
+
+.value-grid {
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+}
+
+.value-card {
+
+    padding:
+        25px 35px;
+
+    border-right:
+        1px solid var(--gray-200);
+}
+
+.value-card:last-child {
+
+    border-right:
+        none;
+}
+
+.value-icon {
+
+    width: 46px;
+    height: 46px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: var(--blue-light);
+
+    color: var(--blue);
+
+    font-size: 12px;
+
+    font-weight: 850;
+}
+
+.value-card h3 {
+
+    margin-top: 18px;
+
+    font-size: 19px;
+
+    font-weight: 800;
+}
+
+.value-card p {
+
+    margin-top: 8px;
+
+    color: var(--gray-600);
+
+    font-size: 13px;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   QUALIFICATION INTRO
+========================================================= */
+
+.qualification-section {
+
+    padding:
+        105px 4vw;
+
+    background: var(--off-white);
+
+    text-align: center;
+}
+
+.qualification-content {
+
+    max-width: 780px;
+
+    margin: 0 auto;
+}
+
+.qualification-section h2 {
+
+    font-size:
+        clamp(38px, 4vw, 60px);
+
+    line-height: 1;
+
+    letter-spacing: -2.5px;
+
+    font-weight: 850;
+}
+
+.qualification-section p {
+
+    max-width: 620px;
+
+    margin:
+        20px auto 0;
+
+    color: var(--gray-600);
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON
+========================================================= */
+
+.primary-button {
+
+    margin-top: 28px;
+
+    padding:
+        15px 24px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: var(--blue);
+
+    color: var(--white);
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+.primary-button:hover {
+
+    background: var(--blue-dark);
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* =========================================================
+   FUNNEL SECTION
+========================================================= */
+
+.funnel-section {
+
+    padding:
+        80px 4vw;
+
+    background: var(--off-white);
+}
+
+.funnel-container {
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding:
+        50px;
+
+    background: var(--white);
+
+    border:
+        1px solid var(--gray-200);
+
+    border-radius:
+        20px;
+
+    box-shadow:
+        0 15px 50px rgba(8, 9, 11, 0.06);
+}
+
+
+/* =========================================================
+   PROGRESS
+========================================================= */
+
+.funnel-progress {
+
+    margin-bottom: 45px;
+}
+
+.progress-top {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 9px;
+
+    color: var(--gray-600);
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+.progress-track {
+
+    width: 100%;
+
+    height: 5px;
+
+    overflow: hidden;
+
+    border-radius: 999px;
+
+    background: var(--gray-200);
+}
+
+.progress-bar {
+
+    width: 20%;
+
+    height: 100%;
+
+    border-radius: 999px;
+
+    background: var(--blue);
+
+    transition:
+        width 0.3s ease;
+}
+
+
+/* =========================================================
+   FUNNEL STEPS
+========================================================= */
+
+.funnel-step {
+
+    display: none;
+
+    animation:
+        funnelIn 0.3s ease;
+}
+
+.funnel-step.active {
+
+    display: block;
+}
+
+@keyframes funnelIn {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(10px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+.step-eyebrow {
+
+    color: var(--blue);
+
+    font-size: 10px;
+
+    font-weight: 850;
+
+    letter-spacing: 2px;
+}
+
+.funnel-step h2 {
+
+    margin-top: 10px;
+
+    font-size:
+        clamp(30px, 4vw, 46px);
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+
+    font-weight: 850;
+}
+
+.funnel-step > p {
+
+    margin-top: 12px;
+
+    color: var(--gray-600);
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   PURPOSE OPTIONS
+========================================================= */
+
+.option-grid {
+
+    margin-top: 32px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.funnel-option {
+
+    min-height: 190px;
+
+    padding:
+        25px 20px;
+
+    border:
+        1px solid var(--gray-200);
+
+    border-radius:
+        14px;
+
+    background: var(--white);
+
+    text-align: center;
+
+    color: var(--black);
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.funnel-option:hover {
+
+    border-color: var(--blue);
+
+    box-shadow:
+        0 10px 25px rgba(23, 105, 255, 0.10);
+
+    transform:
+        translateY(-3px);
+}
+
+.option-icon {
+
+    display: block;
+
+    margin-bottom: 18px;
+
+    font-size: 28px;
+}
+
+.funnel-option strong {
+
+    display: block;
+
+    font-size: 15px;
+}
+
+.funnel-option small {
+
+    display: block;
+
+    max-width: 170px;
+
+    margin:
+        7px auto 0;
+
+    color: var(--gray-600);
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   BUDGET / TIMELINE
+========================================================= */
+
+.option-list {
+
+    max-width: 650px;
+
+    margin-top: 30px;
+
+    display: grid;
+
+    gap: 10px;
+}
+
+.budget-option,
+.timeline-option {
+
+    width: 100%;
+
+    padding:
+        16px 20px;
+
+    border:
+        1px solid var(--gray-200);
+
+    border-radius: 9px;
+
+    background: var(--white);
+
+    text-align: left;
+
+    color: var(--black);
+
+    font-weight: 650;
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.budget-option:hover,
+.timeline-option:hover {
+
+    border-color: var(--blue);
+
+    background: var(--blue-light);
+
+    transform:
+        translateX(3px);
+}
+
+
+/* =========================================================
+   CONTACT FORM
+========================================================= */
+
+.contact-form {
+
+    max-width: 650px;
+}
+
+.form-group {
+
+    margin-top: 20px;
+}
+
+.form-group label {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    color: var(--black);
+}
+
+.form-group input {
+
+    width: 100%;
+
+    padding:
+        15px;
+
+    border:
+        1px solid var(--gray-200);
+
+    border-radius: 9px;
+
+    background: var(--white);
+
+    color: var(--black);
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.form-group input:focus {
+
+    border-color: var(--blue);
+
+    box-shadow:
+        0 0 0 3px rgba(23, 105, 255, 0.10);
+}
+
+.privacy-note {
+
+    margin-top: 12px;
+
+    color: var(--gray-400);
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   SUCCESS
+========================================================= */
+
+.funnel-success {
+
+    display: none;
+
+    text-align: center;
+}
+
+.funnel-success.active {
+
+    display: block;
+
+    animation:
+        funnelIn 0.3s ease;
+}
+
+.success-icon {
+
+    width: 65px;
+    height: 65px;
+
+    margin:
+        0 auto 20px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(22, 132, 90, 0.10);
+
+    color: var(--success);
+
+    font-size: 27px;
+
+    font-weight: 850;
+}
+
+.funnel-success h2 {
+
+    max-width: 720px;
+
+    margin:
+        0 auto;
+
+    font-size:
+        clamp(32px, 4vw, 52px);
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+}
+
+.funnel-success p {
+
+    max-width: 600px;
+
+    margin:
+        18px auto 0;
+
+    color: var(--gray-600);
+}
+
+.text-button {
+
+    display: block;
+
+    margin:
+        17px auto 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: var(--gray-600);
+
+    font-size: 12px;
+}
+
+.text-button:hover {
+
+    color: var(--black);
+}
+
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+.final-cta {
+
+    padding:
+        85px 4vw;
+
+    background: var(--blue);
+
+    color: var(--white);
+
+    text-align: center;
+}
+
+.final-cta .eyebrow {
+
+    color: #bcd2ff;
+}
+
+.final-cta h2 {
+
+    max-width: 800px;
+
+    margin:
+        0 auto;
+
+    font-size:
+        clamp(38px, 5vw, 62px);
+
+    line-height: 0.98;
+
+    letter-spacing: -2.5px;
+
+    font-weight: 850;
+}
+
+.final-cta p {
+
+    max-width: 600px;
+
+    margin:
+        18px auto 0;
+
+    color:
+        rgba(255, 255, 255, 0.82);
+}
+
+.final-cta .hero-button {
+
+    background: var(--white);
+
+    color: var(--black);
+
+    box-shadow: none;
+}
+
+.final-cta .hero-button span {
+
+    color: var(--blue);
+}
+
+.final-cta .hero-button:hover {
+
+    background: #f0f3f8;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.funnel-footer {
+
+    padding:
+        45px 4vw;
+
+    background: var(--black);
+
+    color:
+        rgba(255, 255, 255, 0.65);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+.funnel-footer .brand-name strong {
+
+    color: var(--white);
+}
+
+.funnel-footer p {
+
+    font-size: 11px;
+}
+
+.funnel-footer > span {
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .hero-section {
+
+        grid-template-columns: 1fr;
+
+        padding-top: 50px;
+    }
+
+    .hero-content {
+
+        max-width: 800px;
+    }
+
+    .hero-visual {
+
+        min-height: 500px;
+    }
+
+    .hero-image {
+
+        height: 500px;
+
+        max-width: 620px;
+    }
+
+    .value-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .value-card {
+
+        border-right: none;
+
+        border-bottom:
+            1px solid var(--gray-200);
+    }
+
+    .value-card:last-child {
+
+        border-bottom: none;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .funnel-nav {
+
+        height: 70px;
+
+        padding:
+            0 18px;
+    }
+
+    .nav-cta {
+
+        padding:
+            9px 13px;
+
+        font-size: 11px;
+    }
+
+    .hero-section {
+
+        padding:
+            40px 18px 65px;
+
+        gap: 40px;
+    }
+
+    .hero-content h1 {
+
+        font-size: 49px;
+
+        letter-spacing:
+            -2.5px;
+    }
+
+    .hero-description {
+
+        font-size: 14px;
+    }
+
+    .hero-trust {
+
+        flex-direction: column;
+
+        gap: 9px;
+    }
+
+    .hero-visual {
+
+        min-height: 410px;
+    }
+
+    .hero-image {
+
+        width: 100%;
+
+        height: 410px;
+
+        clip-path:
+            polygon(
+                6% 0%,
+                100% 0%,
+                100% 88%,
+                90% 100%,
+                9% 100%,
+                0% 14%
+            );
+    }
+
+    .property-badge {
+
+        left: 32px;
+
+        right: 32px;
+
+        bottom: 30px;
+
+        padding:
+            16px 18px;
+    }
+
+    .property-badge strong {
+
+        font-size: 19px;
+    }
+
+    .value-section,
+    .qualification-section {
+
+        padding:
+            75px 18px;
+    }
+
+    .section-heading h2,
+    .qualification-section h2 {
+
+        font-size: 38px;
+    }
+
+    .funnel-section {
+
+        padding:
+            50px 12px;
+    }
+
+    .funnel-container {
+
+        padding:
+            28px 18px;
+
+        border-radius:
+            16px;
+    }
+
+    .option-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+
+    .funnel-option {
+
+        min-height:
+            145px;
+    }
+
+    .funnel-step h2 {
+
+        font-size:
+            32px;
+    }
+
+    .final-cta {
+
+        padding:
+            75px 18px;
+    }
+
+    .final-cta h2 {
+
+        font-size:
+            40px;
+    }
+
+    .funnel-footer {
+
+        padding:
+            35px 18px;
+
+        flex-direction:
+            column;
+
+        align-items:
+            flex-start;
+    }
+}
