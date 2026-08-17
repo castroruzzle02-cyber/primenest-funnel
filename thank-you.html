@@ -12,7 +12,311 @@
 
     <title>Thank You | PrimeNest Realty</title>
 
-   <link rel="stylesheet" href="funnel.css">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        body {
+
+            margin: 0;
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #f5f8ff 0%,
+                    #ffffff 50%,
+                    #eef5ff 100%
+                );
+
+            color: #111827;
+
+            min-height: 100vh;
+
+        }
+
+
+        .thank-you-page {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 40px 20px;
+
+        }
+
+
+        .thank-you-card {
+
+            width: 100%;
+
+            max-width: 760px;
+
+            background: #ffffff;
+
+            border-radius: 24px;
+
+            padding: 60px 50px;
+
+            text-align: center;
+
+            box-shadow:
+                0 20px 60px
+                rgba(15, 23, 42, 0.10);
+
+            border:
+                1px solid #e5e7eb;
+
+        }
+
+
+        .success-icon {
+
+            width: 76px;
+
+            height: 76px;
+
+            margin: 0 auto 28px;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background: #e8f7ef;
+
+            color: #059669;
+
+            font-size: 42px;
+
+            font-weight: 700;
+
+        }
+
+
+        .section-label {
+
+            margin: 0 0 18px;
+
+            color: #1769e0;
+
+            font-size: 13px;
+
+            font-weight: 800;
+
+            letter-spacing: 3px;
+
+        }
+
+
+        h1 {
+
+            margin: 0 auto 20px;
+
+            max-width: 650px;
+
+            font-size: clamp(
+                34px,
+                5vw,
+                58px
+            );
+
+            line-height: 1.05;
+
+            letter-spacing: -1.5px;
+
+            color: #0b0b0b;
+
+        }
+
+
+        #thankYouMessage {
+
+            max-width: 620px;
+
+            margin: 0 auto;
+
+            font-size: 18px;
+
+            line-height: 1.7;
+
+            color: #64748b;
+
+        }
+
+
+        .actions {
+
+            margin-top: 36px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            gap: 16px;
+
+        }
+
+
+        .primary-button {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            min-width: 270px;
+
+            padding: 17px 28px;
+
+            border-radius: 10px;
+
+            background: #1769e0;
+
+            color: #ffffff;
+
+            text-decoration: none;
+
+            font-size: 16px;
+
+            font-weight: 700;
+
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease,
+                background 0.2s ease;
+
+        }
+
+
+        .primary-button:hover {
+
+            background: #0f56bf;
+
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 10px 25px
+                rgba(23, 105, 224, 0.25);
+
+        }
+
+
+        .secondary-button {
+
+            border: none;
+
+            background: transparent;
+
+            color: #64748b;
+
+            font-size: 14px;
+
+            font-weight: 600;
+
+            cursor: pointer;
+
+            padding: 8px 16px;
+
+        }
+
+
+        .secondary-button:hover {
+
+            color: #1769e0;
+
+        }
+
+
+        .note {
+
+            margin-top: 30px;
+
+            padding-top: 22px;
+
+            border-top:
+                1px solid #e5e7eb;
+
+            font-size: 13px;
+
+            line-height: 1.6;
+
+            color: #94a3b8;
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .thank-you-page {
+
+                padding: 20px 14px;
+
+            }
+
+
+            .thank-you-card {
+
+                padding: 42px 22px;
+
+                border-radius: 18px;
+
+            }
+
+
+            .success-icon {
+
+                width: 68px;
+
+                height: 68px;
+
+                font-size: 36px;
+
+            }
+
+
+            h1 {
+
+                font-size: 36px;
+
+            }
+
+
+            #thankYouMessage {
+
+                font-size: 16px;
+
+            }
+
+
+            .primary-button {
+
+                width: 100%;
+
+            }
+
+        }
+
+    </style>
 
 </head>
 
@@ -22,69 +326,134 @@
 
     <main class="thank-you-page">
 
+
         <div class="thank-you-card">
 
+
             <div class="success-icon">
+
                 ✓
+
             </div>
 
 
             <p class="section-label">
+
                 REQUEST RECEIVED
+
             </p>
 
 
             <h1 id="thankYouTitle">
+
                 Thanks! We Got Your Request.
+
             </h1>
 
 
             <p id="thankYouMessage">
+
                 We've received your property preferences.
                 A PrimeNest Realty representative will review
                 your information and help you find options
                 that match your needs.
+
             </p>
 
 
-            <a
-                href="index.html"
-                class="primary-button"
-            >
-                BACK TO HOME
-            </a>
+            <div class="actions">
+
+
+                <a
+                    href="https://calendly.com/honor-enlu/30min"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="primary-button"
+                >
+
+                    Schedule a Consultation
+                    &nbsp; →
+
+                </a>
+
+
+                <button
+                    type="button"
+                    class="secondary-button"
+                    onclick="window.location.href='index.html'"
+                >
+
+                    I'll Do This Later
+
+                </button>
+
+
+            </div>
+
+
+            <p class="note">
+
+                Your information has been received successfully.
+                A PrimeNest Realty representative will review your
+                requirements and get in touch with you.
+
+            </p>
+
 
         </div>
+
 
     </main>
 
 
-    <!-- JAVASCRIPT -->
-
     <script>
 
-        const latestLead =
-            JSON.parse(
-                localStorage.getItem("latestPrimeNestLead")
+        const storedLead =
+            localStorage.getItem(
+                "latestPrimeNestLead"
             );
 
 
-        if (latestLead) {
+        if (storedLead) {
 
-            const firstName =
-                latestLead.name.split(" ")[0];
+            try {
 
-
-            document.getElementById(
-                "thankYouTitle"
-            ).textContent =
-                `Thanks, ${firstName}! We Got Your Request.`;
+                const latestLead =
+                    JSON.parse(
+                        storedLead
+                    );
 
 
-            document.getElementById(
-                "thankYouMessage"
-            ).textContent =
-                "We've received your property preferences. A PrimeNest Realty representative will review your information and help you find options that match your needs.";
+                const fullName =
+                    String(
+                        latestLead.name || ""
+                    ).trim();
+
+
+                const firstName =
+                    fullName
+                        .split(/\s+/)[0];
+
+
+                if (firstName) {
+
+                    document.getElementById(
+                        "thankYouTitle"
+                    ).textContent =
+
+                        `Thanks, ${firstName}! We Got Your Request.`;
+
+                }
+
+            }
+
+            catch (error) {
+
+                console.log(
+                    "Unable to read lead information."
+                );
+
+            }
 
         }
 
