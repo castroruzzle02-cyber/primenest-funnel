@@ -122,10 +122,26 @@ const funnelSuccess =
     );
 
 
-const consultationButton =
-    document.getElementById(
-        "consultationButton"
+if (
+    consultationButton
+) {
+
+    consultationButton.addEventListener(
+
+        "click",
+
+        function() {
+
+            window.open(
+                "https://calendly.com/honor-enlu/30min",
+                "_blank"
+            );
+
+        }
+
     );
+
+}
 
 
 const laterButton =
