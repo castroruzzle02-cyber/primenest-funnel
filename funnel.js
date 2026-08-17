@@ -1190,15 +1190,13 @@ if (
             submitLeadButton.textContent =
                 "Submitting...";
 
+try {
 
-            try {
+    await submitLeadToGoogleSheets();
 
-                await submitLeadToGoogleSheets();
+    window.location.href = "thank-you.html";
 
-
-                showSuccess();
-
-            }
+}
 
             catch (error) {
 
